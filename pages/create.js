@@ -1,32 +1,25 @@
-import { Layout, Menu } from 'antd';
+import Head from 'next/head';
+import { Layout, Typography } from 'antd';
+import CreateMenu from '../components/CreateMenu';
 import 'antd/dist/antd.css';
+import pageStyles from '../styles/Page.module.css';
 
-const DrawMenu = () => {
-  return (
-    <Menu style={{ width: 256 }} mode="vertical">
-      <Menu.SubMenu key="a" title="Shape">
-        <Menu.Item key="1">
-        </Menu.Item>
-        <Menu.Item key="2">
-          <rect x="10" y="10" width="30" height="30"/>
-        </Menu.Item>
-      </Menu.SubMenu>
-      <Menu.SubMenu key="b" title="Color">
-        <Menu.Item key="3">Red</Menu.Item>
-        <Menu.Item key="4">Blue</Menu.Item>
-      </Menu.SubMenu>
-    </Menu>
-  );  
-}
+
 
 const Create = () => {
     return (
       <>
-        <Layout.Sider>
-          <DrawMenu />
+        <Head>
+          <title>Fretwiz Create</title>
+        </Head>
+        <Layout.Sider collapsible="false">
+          <CreateMenu />
         </Layout.Sider>
-        <Layout.Content>
-            <h1>Create New Fret Diagram</h1>
+        <Layout.Content className={pageStyles.container}>
+          <main className={pageStyles.main}>
+            <Typography.Title level={2}>Create New Fret Diagram</Typography.Title>
+            <div></div>
+          </main>
         </Layout.Content>
       </>
     );
