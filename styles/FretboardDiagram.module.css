@@ -1,0 +1,29 @@
+.diagram {
+    background-color: #755628;
+    height: 400px;
+    width: 250px;
+}
+
+.fret {
+    border-top: 1px solid #d5dce6;
+    height: 4px;
+    width: 100%;
+    background-color: #9fa8b5;
+    border-bottom: 1px solid #71757a;
+}
+
+.noteRow {
+    height: 96px;
+    display: flex;
+}
+
+.note {
+    flex-grow: 1;
+    height: 96px;
+    /* border: 1px dashed red; */
+}
+
+/* .note::before {
+    content: '';
+    border-left: 4px solid #77787a;
+} */

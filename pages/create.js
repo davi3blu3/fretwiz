@@ -1,6 +1,7 @@
 import Head from 'next/head';
 import { Layout, Typography } from 'antd';
 import CreateMenu from '../components/CreateMenu';
+import FretboardDiagram from '../components/FretboardDiagram';
 import 'antd/dist/antd.css';
 import pageStyles from '../styles/Page.module.css';
 
@@ -18,7 +19,7 @@ const Create = () => {
         <Layout.Content className={pageStyles.container}>
           <main className={pageStyles.main}>
             <Typography.Title level={2}>Create New Fret Diagram</Typography.Title>
-            <div></div>
+            <FretboardDiagram />
           </main>
         </Layout.Content>
       </>
